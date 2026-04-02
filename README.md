@@ -1,62 +1,28 @@
-Let's recap the `git` commands you need to remember in order to work on the challenges during the semester.
+Dataset Description
 
-## Status
+1. Dataset Source
+The dataset used in this project is the Sleep Health and Lifestyle Dataset, obtained from Kaggle.
+It contains information about individuals’ sleep patterns, lifestyle habits, and health-related factors.
+Dataset link: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset?resource=download
+2. Dataset Size
+The dataset contains 374 rows and 13 columns.
 
-First, let's make sure that our working directory is **clean**:
+3. Features Description
+Person ID: Unique identifier for each individual  
+Gender: Male or Female  
+Age: Age of the individual  
+Occupation: Job title of the individual  
+Sleep Duration: Number of hours slept per day  
+Quality of Sleep: Sleep quality score (1–10)  
+Physical Activity Level: Level of daily physical activity  
+Stress Level: Stress level score (1–10)  
+BMI Category: Body mass index classification  
+Blood Pressure: Blood pressure measurement  
+Heart Rate: Heart beats per minute  
+Daily Steps: Number of steps per day  
+Sleep Disorder: Type of sleep disorder (if any)
 
-```bash
-git status
-```
 
-If you get the following result, then you're all set and can start working on this challenge:
-
-```text
-On branch master
-Your branch is up to date with 'origin/master'.
-
-nothing to commit, working tree clean
-```
-
-If you do not get this message, you need to first commit / clean your repo before you can start. Do not hesitate to raise a ticket to get some help from a TA over the first few days. `git` can be hard, so please do ask!
-
-## First commit
-
-Let's create a Python file:
-
-```bash
-touch today.py
-```
-
-Open this file in your text editor. You will need to declare and implement a function called `my_name_is`, which doesn't take any parameter and returns a constant of type `str`. The value of this constant will be your GitHub nickname.
-
-Run `pylint today.py` until one test passes (no need for the second one to be successful, we'll take care of it in a second).
-
-```text
-Your code has been rated at 2.50/10 
-```
-
-Good, you made some progress. It's time to pause and save your progression. Just like a checkpoint!
-
-```bash
-git add today.py
-git commit -m "Implement my_name_is function"
-git push origin master
-```
-
-## Second commit
-
-Let's start solving the second test. To do so, you need to declare and implement a function called `my_age_is`, which doesn't take any parameter and returns a constant . The value of the constant will be your age.
-
-You can use this useful command to check what has changed in the file:
-
-```bash
-git diff
-```
-
-If you are satisfied, you can now commit & push to GitHub:
-
-```bash
-git add today.py
-git commit -m "Implement function"
-git push origin master
-```
+4. Purpose of Using This Dataset
+The purpose of using this dataset is to explore the relationship between lifestyle factors and sleep health. 
+The analysis aims to identify patterns and trends that may affect sleep quality, such as physical activity, stress level, and health indicators.
